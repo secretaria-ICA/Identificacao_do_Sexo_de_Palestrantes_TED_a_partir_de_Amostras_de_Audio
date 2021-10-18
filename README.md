@@ -12,7 +12,7 @@ Para cada palestrantes, foram extraídos pedaços de áudio contendo falas de 2 
 <li><h2>Experimentos</h2></li><br>
 Os dados no dataset estavam no formato sph com rate de 16000Hz. Mantivemos o formato por conta do alto custo computacional envolvido em transformar todos os áudios em 44100Hz. Extraimos 30 MFCC's a partir dos dados originais dentro de uma janela de 1024 frames, resultando em espectros 30x32, que foram alimentados às redes neurais.<br>
 Foi construída uma rede neural com a seguinte disposição:<br>
-<img src="Pics/NN.png"><br>
+<img src="Pics/NN.PNG"><br>
 O treinamento foi feito em 200 épocas usando como callbacks parada precoce com 10 épocas de paciência e com redução de taxa de aprendizado padrão. O otimizador utilizado foi adam e função custo "SparseCategoricalCrossentropy". Mesmo com a parada precoce, o modelo tendeu um pouco ao sobreajuste, conforme podemos ver nos resultados contra o conjunto de validação:<br>
 <img src="Pics/train_val.png"><br>
 No conjunto de teste, conseguimos uma acurácia de 81% (contra 91% do conjunto de treino) e uma AUC de 0.88. O melhor ponto de corte teórico (KS) ficou em 53,4%.<br>
