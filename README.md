@@ -22,24 +22,25 @@ No conjunto de teste, conseguimos uma acurácia de 81% (contra 91% do conjunto d
 
 Usando como ponto de corte 50% obtivemos os seguintes resultados:
 <table>
-    <tr><th></th><th>precision</th><th>recall</th><th>f1-score</th><th>support</th></tr>
-    <tr><th>0</th><th></th><th></th><th></th><th></th></tr>
-</table>
-
 <th></th><th>precision</th><th>recall</th><th>f1-score</th><th>support</th>
 <th>    0</th><th>0.71</th><th>0.83</th><th>0.76</th><th>510</th>
 <th>    1</th><th>0.88</th><th>0.78</th><th>0.83</th><th>804</th>
 <th>    accuracy</th><th></th><th></th><th></th><th>0.80</th><th>1314</th>
 <th>   macro avg</th><th>0.79</th><th>0.81</th><th>0.79</th><th>1314</th>
 <th>weighted avg</th><th>0.81</th><th>0.80</th><th>0.80</th><th>1314</th>
+</table>
 
 Usando como ponto de corte 53,4% obtivemos os seguintes resultados:
+<table>
 <th></th><th>precision    recall  f1-score   support</th>
 <th>    0</th><th>0.74</th><th>0.79</th><th>0.76</th><th>510</th>
 <th>    1</th><th>0.86</th><th>0.82</th><th>0.84</th><th>804</th>
 <th>accuracy</th><th></th><th></th><th></th><th>0.81</th><th>1314</th>
 <th>macro avg</th><th>0.80</th><th>0.81</th><th>0.80</th><th>1314</th>
 <th>weighted avg</th><th>0.81</th><th>0.81</th><th>0.81</th><th>1314</th>
+</table>
+
+
 <li><h2>Análise de erros</h2></li>
 Foi feita também uma análise dos erros por palestrante. O único erro de classificação mais grave foi referente ao palestrante Birke Baehr, um menino de 11 anos, categorizado fortemente como criança, explicando um pouco da disparidade entre o resultado da validação e teste. Outros erros se referem a vozes mais difíceis de distinguir (por ex.: vozes masculinas mais finas ou sotaques estrangeiros)<br>
 <img src="Pics/Analise_Erro.png"><br>
