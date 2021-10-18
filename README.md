@@ -22,22 +22,22 @@ No conjunto de teste, conseguimos uma acurácia de 81% (contra 91% do conjunto d
 
 Usando como ponto de corte 50% obtivemos os seguintes resultados:
 <table>
-<th></th><th>precision</th><th>recall</th><th>f1-score</th><th>support</th>
-<th>    0</th><th>0.71</th><th>0.83</th><th>0.76</th><th>510</th>
-<th>    1</th><th>0.88</th><th>0.78</th><th>0.83</th><th>804</th>
-<th>    accuracy</th><th></th><th></th><th></th><th>0.80</th><th>1314</th>
-<th>   macro avg</th><th>0.79</th><th>0.81</th><th>0.79</th><th>1314</th>
-<th>weighted avg</th><th>0.81</th><th>0.80</th><th>0.80</th><th>1314</th>
+<tr><th></th><th>precision</th><th>recall</th><th>f1-score</th><th>support</th></tr>
+<tr><th>    0</th><th>0.71</th><th>0.83</th><th>0.76</th><th>510</th></tr>
+<tr><th>    1</th><th>0.88</th><th>0.78</th><th>0.83</th><th>804</th></tr>
+<tr><th>    accuracy</th><th></th><th></th><th></th><th>0.80</th><th>1314</th></tr>
+<tr><th>   macro avg</th><th>0.79</th><th>0.81</th><th>0.79</th><th>1314</th></tr>
+<tr><th>weighted avg</th><th>0.81</th><th>0.80</th><th>0.80</th><th>1314</th></tr>
 </table>
 
 Usando como ponto de corte 53,4% obtivemos os seguintes resultados:
 <table>
-<th></th><th>precision    recall  f1-score   support</th>
-<th>    0</th><th>0.74</th><th>0.79</th><th>0.76</th><th>510</th>
-<th>    1</th><th>0.86</th><th>0.82</th><th>0.84</th><th>804</th>
-<th>accuracy</th><th></th><th></th><th></th><th>0.81</th><th>1314</th>
-<th>macro avg</th><th>0.80</th><th>0.81</th><th>0.80</th><th>1314</th>
-<th>weighted avg</th><th>0.81</th><th>0.81</th><th>0.81</th><th>1314</th>
+<tr><th></th><th>precision    recall  f1-score   support</th>
+<tr><th>    0</th><th>0.74</th><th>0.79</th><th>0.76</th><th>510</th></tr>
+<tr><th>    1</th><th>0.86</th><th>0.82</th><th>0.84</th><th>804</th></tr>
+<tr><th>accuracy</th><th></th><th></th><th></th><th>0.81</th><th>1314</th></tr>
+<tr><th>macro avg</th><th>0.80</th><th>0.81</th><th>0.80</th><th>1314</th></tr>
+<tr><th>weighted avg</th><th>0.81</th><th>0.81</th><th>0.81</th><th>1314</th></tr>
 </table>
 
 
