@@ -25,7 +25,7 @@ Usando como ponto de corte 50% obtivemos os seguintes resultados:
 <tr><td></td><td>precision</td><td>recall</td><td>f1-score</td><td>support</td></tr>
 <tr><td>    0</td><td>0.71</td><td>0.83</td><td>0.76</td><td>510</td></tr>
 <tr><td>    1</td><td>0.88</td><td>0.78</td><td>0.83</td><td>804</td></tr>
-<tr><td>    accuracy</td><td></td><td></td><td></td><td>0.80</td><td>1314</td></tr>
+<tr><td>    accuracy</td><td></td><td></td><td>0.80</td><td>1314</td></tr>
 <tr><td>   macro avg</td><td>0.79</td><td>0.81</td><td>0.79</td><td>1314</td></tr>
 <tr><td>weighted avg</td><td>0.81</td><td>0.80</td><td>0.80</td><td>1314</td></tr>
 </table>
@@ -35,7 +35,7 @@ Usando como ponto de corte 53,4% obtivemos os seguintes resultados:
 <tr><td></td><td>precision    recall  f1-score   support</td>
 <tr><td>    0</td><td>0.74</td><td>0.79</td><td>0.76</td><td>510</td></tr>
 <tr><td>    1</td><td>0.86</td><td>0.82</td><td>0.84</td><td>804</td></tr>
-<tr><td>accuracy</td><td></td><td></td><td></td><td>0.81</td><td>1314</td></tr>
+<tr><td>accuracy</td><td></td><td></td><td>0.81</td><td>1314</td></tr>
 <tr><td>macro avg</td><td>0.80</td><td>0.81</td><td>0.80</td><td>1314</td></tr>
 <tr><td>weighted avg</td><td>0.81</td><td>0.81</td><td>0.81</td><td>1314</td></tr>
 </table>
