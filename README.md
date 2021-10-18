@@ -12,7 +12,7 @@ Para cada palestrantes, foram extraídos pedaços de áudio contendo falas de 2 
 <li><h2>Experimentos</h2></li><br>
 Os dados no dataset estavam no formato sph com rate de 16000Hz. Mantivemos o formato por conta do alto custo computacional envolvido em transformar todos os áudios em 44100Hz. Extraimos 30 MFCC's a partir dos dados originais dentro de uma janela de 1024 frames, resultando em espectros 30x32, que foram alimentados às redes neurais.<br>
 Foi construída uma rede neural com a seguinte disposição:<br>
-<img src="Pics/NN.PNG"><br>
+<img src="Pics/NN.png"><br>
 O treinamento foi feito em 200 épocas usando como callbacks parada precoce com 10 épocas de paciência e com redução de taxa de aprendizado padrão. O otimizador utilizado foi adam e função custo "SparseCategoricalCrossentropy". Mesmo com a parada precoce, o modelo tendeu um pouco ao sobreajuste, conforme podemos ver nos resultados contra o conjunto de validação:<br>
 <img src="Pics/train_val.png"><br>
 No conjunto de teste, conseguimos uma acurácia de 81% (contra 91% do conjunto de treino) e uma AUC de 0.88. O melhor ponto de corte teórico (KS) ficou em 53,4%.<br>
@@ -21,21 +21,25 @@ No conjunto de teste, conseguimos uma acurácia de 81% (contra 91% do conjunto d
 <img src="Pics/Divisão.png"><br>
 
 Usando como ponto de corte 50% obtivemos os seguintes resultados:
+<table>
+    <tr><th></th><th>precision</th><th>recall</th><th>f1-score</th><th>support</th></tr>
+    <tr><th>0</th><th></th><th></th><th></th><th></th></tr>
+</table>
 
-&nbsp;&nbsp;precision&nbsp;recall&nbsp;f1-score&nbsp;support<br>
-&nbsp;&nbsp;0&nbsp;0.71&nbsp; 0.83&nbsp; 0.76&nbsp;510<br>
-&nbsp;&nbsp;1&nbsp;0.88&nbsp; 0.78&nbsp; 0.83&nbsp;804<br>
-&nbsp;accuracy&nbsp;&nbsp;&nbsp;&nbsp; 0.80&nbsp; 1314<br>
-&nbsp;macro avg&nbsp;0.79&nbsp; 0.81&nbsp; 0.79&nbsp; 1314<br>
-weighted avg&nbsp;0.81&nbsp; 0.80&nbsp; 0.80&nbsp; 1314<br>
+<th></th><th>precision</th><th>recall</th><th>f1-score</th><th>support</th>
+<th>    0</th><th>0.71</th><th>0.83</th><th>0.76</th><th>510</th>
+<th>    1</th><th>0.88</th><th>0.78</th><th>0.83</th><th>804</th>
+<th>    accuracy</th><th></th><th></th><th></th><th>0.80</th><th>1314</th>
+<th>   macro avg</th><th>0.79</th><th>0.81</th><th>0.79</th><th>1314</th>
+<th>weighted avg</th><th>0.81</th><th>0.80</th><th>0.80</th><th>1314</th>
+
 Usando como ponto de corte 53,4% obtivemos os seguintes resultados:
-&nbsp;&nbsp;precision&nbsp;recall&nbsp;f1-score&nbsp;support<br>
-&nbsp;&nbsp;0&nbsp;0.74&nbsp; 0.79&nbsp; 0.76&nbsp;510<br>
-&nbsp;&nbsp;1&nbsp;0.86&nbsp; 0.82&nbsp; 0.84&nbsp;804<br>
-&nbsp;accuracy&nbsp;&nbsp;&nbsp;&nbsp; 0.81&nbsp; 1314<br>
-&nbsp;macro avg&nbsp;0.80&nbsp; 0.81&nbsp; 0.80&nbsp; 1314<br>
-weighted avg&nbsp;0.81&nbsp; 0.81&nbsp; 0.81&nbsp; 1314<br>
-<br>
+<th></th><th>precision    recall  f1-score   support</th>
+<th>    0</th><th>0.74</th><th>0.79</th><th>0.76</th><th>510</th>
+<th>    1</th><th>0.86</th><th>0.82</th><th>0.84</th><th>804</th>
+<th>accuracy</th><th></th><th></th><th></th><th>0.81</th><th>1314</th>
+<th>macro avg</th><th>0.80</th><th>0.81</th><th>0.80</th><th>1314</th>
+<th>weighted avg</th><th>0.81</th><th>0.81</th><th>0.81</th><th>1314</th>
 <li><h2>Análise de erros</h2></li>
 Foi feita também uma análise dos erros por palestrante. O único erro de classificação mais grave foi referente ao palestrante Birke Baehr, um menino de 11 anos, categorizado fortemente como criança, explicando um pouco da disparidade entre o resultado da validação e teste. Outros erros se referem a vozes mais difíceis de distinguir (por ex.: vozes masculinas mais finas ou sotaques estrangeiros)<br>
 <img src="Pics/Analise_Erro.png"><br>
