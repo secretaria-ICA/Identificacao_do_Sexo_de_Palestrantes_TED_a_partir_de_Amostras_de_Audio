@@ -1,7 +1,7 @@
-# Identificação do sexo de palestrantes TED a partir de amostras de áudio
+# Identificação_do_Sexo_de_Palestrantes_TED_a_partir_de_Amostras_de_Audio
 
-#### Aluno: [Thiago Valejo Gomes Pereira](https://github.com/valejop)
-#### Orientadora: Leonardo Forero Mendoza
+#### Aluno: [Thiago Valejo Gomes Pereira](https://github.com/valejop).
+#### Orientadora: [Leonardo Forero Mendoza](https://github.com/leofome8).
 
 ---
 
